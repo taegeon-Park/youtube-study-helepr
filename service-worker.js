@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/taegeon-Park/youtube-study-helepr.git/precache-manifest.f6be151bab650ced2ba739b00f6988ab.js"
+  "/taegeon-Park/youtube-study-helepr.git/precache-manifest.4cbca0434bcac1c4f44b523242ebb2d9.js"
 );
 
 self.addEventListener('message', (event) => {
