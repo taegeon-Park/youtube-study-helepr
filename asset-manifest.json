@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/taegeon-Park/youtube-study-helepr.git/static/css/main.7715c009.chunk.css",
-    "main.js": "/taegeon-Park/youtube-study-helepr.git/static/js/main.7b69d896.chunk.js",
-    "main.js.map": "/taegeon-Park/youtube-study-helepr.git/static/js/main.7b69d896.chunk.js.map",
-    "runtime-main.js": "/taegeon-Park/youtube-study-helepr.git/static/js/runtime-main.4e14f248.js",
-    "runtime-main.js.map": "/taegeon-Park/youtube-study-helepr.git/static/js/runtime-main.4e14f248.js.map",
-    "static/js/2.9eafe0d9.chunk.js": "/taegeon-Park/youtube-study-helepr.git/static/js/2.9eafe0d9.chunk.js",
-    "static/js/2.9eafe0d9.chunk.js.map": "/taegeon-Park/youtube-study-helepr.git/static/js/2.9eafe0d9.chunk.js.map",
-    "index.html": "/taegeon-Park/youtube-study-helepr.git/index.html",
-    "precache-manifest.4cbca0434bcac1c4f44b523242ebb2d9.js": "/taegeon-Park/youtube-study-helepr.git/precache-manifest.4cbca0434bcac1c4f44b523242ebb2d9.js",
-    "service-worker.js": "/taegeon-Park/youtube-study-helepr.git/service-worker.js",
-    "static/css/main.7715c009.chunk.css.map": "/taegeon-Park/youtube-study-helepr.git/static/css/main.7715c009.chunk.css.map",
-    "static/js/2.9eafe0d9.chunk.js.LICENSE.txt": "/taegeon-Park/youtube-study-helepr.git/static/js/2.9eafe0d9.chunk.js.LICENSE.txt"
+    "main.css": "/taegeon-park23/youtube-study-helepr.git/static/css/main.7715c009.chunk.css",
+    "main.js": "/taegeon-park23/youtube-study-helepr.git/static/js/main.731e22d8.chunk.js",
+    "main.js.map": "/taegeon-park23/youtube-study-helepr.git/static/js/main.731e22d8.chunk.js.map",
+    "runtime-main.js": "/taegeon-park23/youtube-study-helepr.git/static/js/runtime-main.caa9393f.js",
+    "runtime-main.js.map": "/taegeon-park23/youtube-study-helepr.git/static/js/runtime-main.caa9393f.js.map",
+    "static/js/2.39bd6ef1.chunk.js": "/taegeon-park23/youtube-study-helepr.git/static/js/2.39bd6ef1.chunk.js",
+    "static/js/2.39bd6ef1.chunk.js.map": "/taegeon-park23/youtube-study-helepr.git/static/js/2.39bd6ef1.chunk.js.map",
+    "index.html": "/taegeon-park23/youtube-study-helepr.git/index.html",
+    "precache-manifest.35f77faf554f16952576eb47a468230a.js": "/taegeon-park23/youtube-study-helepr.git/precache-manifest.35f77faf554f16952576eb47a468230a.js",
+    "service-worker.js": "/taegeon-park23/youtube-study-helepr.git/service-worker.js",
+    "static/css/main.7715c009.chunk.css.map": "/taegeon-park23/youtube-study-helepr.git/static/css/main.7715c009.chunk.css.map",
+    "static/js/2.39bd6ef1.chunk.js.LICENSE.txt": "/taegeon-park23/youtube-study-helepr.git/static/js/2.39bd6ef1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e14f248.js",
-    "static/js/2.9eafe0d9.chunk.js",
+    "static/js/runtime-main.caa9393f.js",
+    "static/js/2.39bd6ef1.chunk.js",
     "static/css/main.7715c009.chunk.css",
-    "static/js/main.7b69d896.chunk.js"
+    "static/js/main.731e22d8.chunk.js"
   ]
 }
