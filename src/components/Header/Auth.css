@@ -1,0 +1,14 @@
+.Auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Auth-icon {
+    margin:5px;
+    min-width: 66px;
+    width: 66px;
+    height: 66px;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}

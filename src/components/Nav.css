@@ -1,0 +1,86 @@
+.Nav {
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    width: var(--Nav-width);
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 400ms ease-in-out;
+    font-family: 'Gaegu', cursive;
+
+}
+
+.Nav:hover{
+    width: calc(var(--Nav-width) * 3);
+}
+
+.Nav-home {
+  margin: 10px;
+  background-color: rgb(255, 1, 1);
+  border-radius: 10px;
+  color: white;
+  width: 80px;
+  height:66px;
+  display: flex;
+  flex-basis: 1;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: auto;
+  filter: grayscale(90%) opacity(80%);
+}
+
+.Nav-home:hover {
+  filter: grayscale(0%) opacity(100%);
+  animation: Header-home-spin infinite 2s;
+}
+
+@keyframes Header-home-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} 
+  .Nav-category-items {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Nav-category-tab {
+    color: cadetblue;
+    margin-left: 40px;
+    margin-right: auto;
+    transition: all 200ms ease-in-out;
+  }
+
+  .Nav-category-tab:hover{
+    position: relative;
+    width: 30px;
+    height: 30px;
+  }
+
+  .Nav-category-item {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    filter: grayscale(100%) opacity(60%);
+  }
+
+  .Nav-category-item:hover {
+    filter: grayscale(0%) opacity(100%);
+  }
+  
+  .Nav-category-foot {
+    margin-top: auto;
+    margin-left: 40px;
+    margin-right: auto;
+  }
+

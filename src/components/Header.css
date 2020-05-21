@@ -1,0 +1,11 @@
+
+.Header {
+    background-color: rgb(255, 255, 255);
+    height: var(--Header-height);
+    width: calc(100% - var(--Nav-width));
+    font-size: 2rem;
+    margin-left: auto;
+    display: flex;
+  }
+
+

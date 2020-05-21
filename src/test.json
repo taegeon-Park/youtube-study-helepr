@@ -1,0 +1,1 @@
+[{"id":1,"categoryName":"2323","userEmail":"vrimd1017@gmail.com","categoryArr":[{"categoryCode":2,"categoryName":"자식카테고리1"},{"categoryCode":4,"categoryName":"자식카테고리2"}]},{"id":29,"categoryName":"부모카테고리2","userEmail":"vrimd1017@gmail.com","categoryArr":[{"categoryCode":30,"categoryName":"자식카테고리3"}]}]

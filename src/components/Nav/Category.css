@@ -1,0 +1,49 @@
+.Category {
+    display: flex;
+    background-color: palegreen;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    flex-direction: column;
+    width:100%;
+    transition: all 200ms ease-in-out;  
+  }
+  
+  .Category:hover {
+    width: 90%;
+  }
+
+  .Category-main, .Category-sub{
+    display: flex;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+    border-radius: 10px;
+    
+  }
+
+  .Category-main {
+    background-color: mediumaquamarine;
+    color: black;
+    font-weight: bold;
+  }
+
+  .Category-sub {
+    display: none;
+    overflow:hidden;
+  }
+  
+  .Category-content {
+    text-align: center;
+    flex-grow: 2;
+    margin-left: 20px;
+  }
+  
+  .Category-content:hover {
+    font-size: 1.2rem;
+    color: rgb(250, 250, 250);
+    text-shadow: 1px 1px black;
+  }
+  
+  .Category-sub  .Category-content {
+    margin-left: 40px;
+  }

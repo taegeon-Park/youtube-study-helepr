@@ -1,0 +1,61 @@
+.WholeNavModal {
+  position: fixed;
+  display: none;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  font-family: 'Gaegu', cursive;
+  width: 0px;
+  height: 0px;
+  top: 15%;
+  left: 40px;
+  background-color: rgb(117, 204, 255);
+  transition: all 200ms ease-in-out;
+  z-index: 1;
+}
+.WholeNavModal-content {
+  display: flex;
+  background-color: rgb(117, 204, 255);
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  filter: brightness(1.1);
+}
+
+.WholeNavModeOuter {
+  position: fixed;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: gray;
+  filter: blur(80px) opacity(60%)
+}
+
+.WholeNavModal-exit-button {
+    border-radius: 5px;
+    width: 33px;
+    height: 33px;
+    box-shadow: 1px 1px white;
+    background-color: rgb(202, 202, 202);
+  }
+  .whole-category-parent {
+    margin: 10px;
+    background-color: rgb(95, 250, 191);
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 1px 1px white;
+  }
+  
+  .whole-category-main {
+    text-align: center;
+    font: 1.2rem solid black;
+    font-weight: bold;
+  }
+  
+  .whole-category-sub {
+    font: 0.8rem solid black;
+    margin-left: 10px;
+    margin-right: auto;
+  }
+  

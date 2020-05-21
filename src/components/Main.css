@@ -1,0 +1,9 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    margin-left: var(--Nav-width);
+    height: 100%;
+    
+    /* animation: mySpinner 1s;
+    animation-iteration-count: infinite; */
+  }
