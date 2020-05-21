@@ -6,4 +6,7 @@ app.get('/', function(req, res) {
   res.cookie('3pcookie-legacy', 'value', { secure: true });
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
-app.listen(5000);
+var port = process.env.PORT || 3000; // 1
+app.listen(port, function(){
+  console.log('server on! http://localhost:'+port);
+});

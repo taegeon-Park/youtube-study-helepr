@@ -1,5 +1,5 @@
 {
-  "homepage": "https://github.com/taegeon-Park/youtube-study-helepr.git",
+  "homepage": "https://taegeon-park23.github.io/youtube-study-helper/",
   "name": "test-study-redux",
   "version": "0.1.0",
   "private": true,
@@ -17,7 +17,7 @@
     "redux": "^4.0.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node main.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
