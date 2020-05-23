@@ -24,6 +24,7 @@
     margin-left: 10px;
     border-radius: 10px;
     /* width: var(--MemoList-width); */
+    height: 316px;
     background-color: yellowgreen;
     overflow-y: scroll;
   }

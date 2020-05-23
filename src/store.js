@@ -8,11 +8,14 @@ export default createStore(function(state, action) {
             onExtendMain: false,
             categoryArr: [],
             noteArr  : [],
-            categorySelected: false
+            categorySelected: false,
+            login: false
         }        
     }
 
     switch(action.type) {
+        case 'LOGIN':
+            return Object.assign(state,{login: action.login}); 
         case 'CATEGORYS_LOAD':
             return Object.assign(state,{categoryArr:action.categoryArr});
         case 'NOTES_LOAD':

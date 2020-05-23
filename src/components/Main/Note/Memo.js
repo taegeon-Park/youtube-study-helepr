@@ -38,7 +38,8 @@ export default class Memo extends Component {
         let _onUpdateDivClick = (e) => {
             const modify = document.getElementById(`Memo-modify-${memo.memoCode}`);
             const real = document.getElementById(`Memo-real-${memo.memoCode}`);
-            if (modify.style.display === 'none') {
+            debugger;
+            if (modify.style.display === 'none' || modify.style.display === '' ) {
                 real.style.display = 'none'
                 modify.style.display = 'flex';
             } else {

@@ -11,6 +11,7 @@ export default class Category extends Component {
     let category = null;
     let subCategoryList = [];
     let mainCategory = this.props.category;
+    
     let onClickCategoryExtend = (e) => {
       if (e.target.innerText === "▼") {
         e.target.innerText = "▲";

@@ -7,3 +7,61 @@
     /* animation: mySpinner 1s;
     animation-iteration-count: infinite; */
   }
+
+  .Note-tool {
+    width: 100%;
+    display: flex;
+  }
+
+  .button-layout {
+     
+    padding: 3px;
+     margin: 2px;
+     background-color: violet;
+     border-radius: 5px;
+ }
+
+ .tool-button {
+   border-radius: 5px;
+   background-color: white;
+   font-size: 1.2rem;
+   min-height: inherit;
+ }
+
+.Note-create-in {
+  position: absolute;
+  visibility: hidden;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Note-craete-outer {
+  position: fixed;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+  opacity: 60%;
+}
+
+.Note-create-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Note-create-button {
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 5px;
+  flex-grow: 1;
+}

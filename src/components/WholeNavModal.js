@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import store from '../store';
-import { BsArrowsAngleContract } from 'react-icons/bs';
+import { BsArrowsAngleContract, BsFillPlusCircleFill, BsFillXCircleFill} from 'react-icons/bs';
 import './WholeNavModal.css';
 
 export default class WholeNavModal extends Component {
@@ -47,6 +47,12 @@ export default class WholeNavModal extends Component {
       store.dispatch({ type: 'EXTEND_NAV', onExtendNavMod: false });
     }
 
+    let onClickCategoryContent = (e) => {
+      store.dispatch({ type: 'EXTEND_MAIN', onExtendMain: false });
+      store.dispatch({ type: 'SELECTED_CATEGORY', categorySelected: e.target.getAttribute('value') });
+      onClickNavCategoryTab();
+    }
+
     let _onMouseOut = (e) => {
       mouseOut = true;
     }
@@ -60,18 +66,35 @@ export default class WholeNavModal extends Component {
         onClickNavCategoryTab();
     }
 
+    let _onClickPlusSubcategory = (e) => {
+      let index = Number.parseInt(e.target.value);
+      debugger;
+      let _subcCategoryArr = _categoryArr[index].categoryArr.concat([{categoryName:"1", categoryCode:3}]);
+      let newCategoryArr = _categoryArr.map((item)=>item);
+      newCategoryArr[index].categoryArr = _subcCategoryArr;
+      this.setState({categoryArr: newCategoryArr});
+    }
+
     let _categoryArr = this.props.categoryArr;
     let _categoryParent = [];
+    let index = 0;
 
     if (_categoryArr !== undefined) {
       _categoryArr.forEach(main => {
         let subCategoryList = [];
         main.categoryArr.forEach(sub => {
-          subCategoryList.push(<div key={sub.categoryName} className="whole-category-sub">{sub.categoryName}</div>)
+          subCategoryList.push(<div key={sub.categoryName} className="whole-category-sub wholeCategory"> 
+            <span value={sub.categoryCode} onClick={onClickCategoryContent}>{sub.categoryName}</span>
+            <button className="whole-category-sub-button wholeNavButton">-</button>
+            </div>)
         });
         _categoryParent.push(
           <div key={main.categoryName} className="whole-category-parent">
-            <div key={main.categoryName} className="whole-category-main">{main.categoryName}</div>
+            <div key={main.categoryName} className="whole-category-main wholeCategory">
+              <span value={main.categoryCode} onClick={onClickCategoryContent}>{main.categoryName}</span>
+                <button className="plusCategory whole-category-main-button wholeNavButton"  value={index++} onClick={_onClickPlusSubcategory}>+</button>
+                <button className="minusCategory whole-category-main-button wholeNavButton">-</button>
+            </div>
             {subCategoryList}
           </div>
         )

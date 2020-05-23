@@ -12,8 +12,10 @@
   transition: all 200ms ease-in-out;
   z-index: 1;
 }
+
 .WholeNavModal-content {
   display: flex;
+  flex-wrap: wrap;
   background-color: rgb(117, 204, 255);
   width: 100%;
   position: absolute;
@@ -42,11 +44,20 @@
   .whole-category-parent {
     margin: 10px;
     background-color: rgb(95, 250, 191);
-    width: 100px;
     border-radius: 10px;
     box-shadow: 1px 1px white;
   }
   
+  .wholeCategory {
+    display: flex;
+    width: 100%
+  }
+
+  .wholeCategory:active {
+    color: white;
+    font: bold;
+  }
+
   .whole-category-main {
     text-align: center;
     font: 1.2rem solid black;
@@ -58,4 +69,21 @@
     margin-left: 10px;
     margin-right: auto;
   }
+
+  .wholeNavButton {
+    background: none;
+    border: none;
+  }
+
+  .plusCategory {
+    margin-left: auto;
+  }
+  .whole-category-main-button {
+
+  }
+  .whole-category-sub-button {
+    margin-right:10px;
+    margin-left: auto;
+  }
+
   

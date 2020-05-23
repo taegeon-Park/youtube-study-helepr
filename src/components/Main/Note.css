@@ -67,12 +67,19 @@
     border: 5px solid red;
     color: red;
     font: 1.1rem solid bold;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .Note-button:hover {
+    background-color: red;
+    color: white;  
   }
 
   .Note-content {
     margin-left:var(--Note-margin-left);
     display: flex;
     flex-direction: row;
+
   }
 
   .Note-content-thumbnail {
