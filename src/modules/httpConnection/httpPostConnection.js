@@ -1,20 +1,19 @@
-const httpJsonConnection = async (url, body, resSuc, resFail) => {
+const httpPostConnection = async (url, body, resSuc, resFail) => {
     console.log('cccc',url);    
     
-    let sendData = JSON.stringify(body);
     let json = await fetch(url, {
       method: 'POST',
-      body: sendData,
+      body,
       headers:{
         'Content-Type': 'application/json',
         'Authorization' : 'Bearer',
-        'Acess-Control-Allow-Origin' : 'http://172.30.1.59:3000'
       }
     })
-      .then(res => res.json())
+      .then(res => alert(`${res}`))
       .catch(err =>console.log(`${err}`));
+      resSuc(json);
 
    return json;
   };
   
-  export default httpJsonConnection;
+  export default httpPostConnection;
