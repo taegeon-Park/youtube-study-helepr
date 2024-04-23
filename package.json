@@ -39,7 +39,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0",
+    "gh-pages": "^5.0.0",
     "remote-redux-devtools": "^0.5.16"
   }
 }
